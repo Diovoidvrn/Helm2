@@ -1,0 +1,12 @@
+replicaCount: 3
+
+image:
+  repository: diovvoid/neoflexdio
+  tag: kube
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 8080
+  nodePort: 30081
